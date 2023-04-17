@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Text';
+    outline: none;
+}
+
+body {
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background-color: #05eedb;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px rgba(0,0,0,0.16),
+                      5px 5px 12px rgba(0,0,0,0.16);
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+}
+
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: #25b7c4;
+    box-shadow: inset -5px -5px 12px rgba(0,0,0,0.16),
+                inset 5px 5px 12px rgba(0,0,0,0.16);
+    border: none;
+    border-radius: 30px;
+    color: black;
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+button{
+    height: 48px;
+    width: 48px;
+    background-color: #25b7c4;
+    box-shadow: -5px -5px 12px rgba(0,0,0,0.16),
+                5px 5px 12px rgba(0,0,0,0.16);
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 25px;
+}
+
+button:active{
+    background-color: #ffffff;
+}
+
+.equal{
+    width: 115px;
+    border-radius: 40px;
+    background-color: #25b7c4;
+    box-shadow: -5px -5px 12px rgba(0,0,0,0.16),
+                5px 5px 12px rgba(0,0,0,0.16);
+}
+
+/* footer section styling */
+footer{
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer span a{
+  font-family: Audiowide;
+  color: #25b7c4;
+  text-decoration: none;
+}
+footer span a:hover{
+  text-decoration: underline;
+}
